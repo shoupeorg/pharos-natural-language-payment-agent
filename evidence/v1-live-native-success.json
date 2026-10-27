@@ -1,0 +1,305 @@
+{
+  "evidenceVersion": "1",
+  "label": "HISTORICAL REAL LIVE EVIDENCE",
+  "capturedAt": "2026-10-27T18:44:46.807Z",
+  "instruction": "Send 0.000001 PROS to 0x4117b9737f64d816be36f6c18c72409c98e4737c",
+  "sender": "0x15ddce897d76ac39c188ade4d353711a60395315",
+  "result": {
+    "id": "e9448ec2-293c-4af0-9c2b-c3d84616346c",
+    "engineVersion": "natural-language-payment-agent/1.0.0",
+    "status": "VALIDATED",
+    "historical": false,
+    "parsed": {
+      "instruction": "Send 0.000001 PROS to 0x4117b9737f64d816be36f6c18c72409c98e4737c",
+      "canonical": {
+        "network": "Pharos Pacific Mainnet",
+        "chainId": 1672,
+        "amount": "0.000001",
+        "asset": "PROS",
+        "recipient": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+        "tokenContract": null
+      },
+      "clarifications": {},
+      "provenance": {
+        "recipient": {
+          "text": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+          "start": 22,
+          "end": 64,
+          "kind": "instruction"
+        },
+        "amount": {
+          "text": "0.000001",
+          "start": 5,
+          "end": 13,
+          "kind": "instruction"
+        },
+        "asset": {
+          "text": "PROS",
+          "start": 14,
+          "end": 18,
+          "kind": "instruction"
+        }
+      },
+      "issues": [],
+      "questions": [],
+      "status": "PARSED",
+      "parser": "deterministic rules; no LLM"
+    },
+    "sender": "0x15ddce897d76ac39c188ade4d353711a60395315",
+    "network": {
+      "name": "Pharos Pacific Mainnet",
+      "chainId": 1672,
+      "chainIdHex": "0x688",
+      "nativeSymbol": "PROS",
+      "nativeDecimals": 18,
+      "mcpUrl": "https://mcp.pharos.xyz/mcp",
+      "rpcUrl": "https://rpc.pharos.xyz",
+      "explorer": "https://www.pharosscan.xyz",
+      "aliases": [
+        "pharos",
+        "pharos mainnet",
+        "pharos pacific",
+        "pharos pacific mainnet",
+        "pacific",
+        "pacific mainnet"
+      ]
+    },
+    "asset": {
+      "kind": "NATIVE",
+      "symbol": "PROS",
+      "name": "PROS",
+      "contract": null,
+      "decimals": 18,
+      "registrySource": null
+    },
+    "amount": {
+      "human": "0.000001",
+      "atomic": "1000000000000"
+    },
+    "balances": {
+      "nativeWei": "179167084732531768767",
+      "native": "179.167084732531768767",
+      "tokenRaw": null,
+      "token": null
+    },
+    "transaction": {
+      "from": "0x15ddce897d76ac39c188ade4d353711a60395315",
+      "to": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+      "value": "0xe8d4a51000",
+      "data": "0x"
+    },
+    "transferRoundTrip": null,
+    "simulation": {
+      "kind": "SUCCESS",
+      "returnData": "0x"
+    },
+    "gas": {
+      "estimate": "21000",
+      "bufferedLimit": "25200",
+      "gasPriceWei": "10000000000",
+      "maximumCostWei": "252000000000000",
+      "source": "get_gas_price; estimate_gas",
+      "estimatePinned": false,
+      "gasPricePinned": false
+    },
+    "block": {
+      "hex": "0x146ef0d",
+      "decimal": "21425933",
+      "hash": "0x9d1a5c15f36b32a2a2d46a6970d092a9325bc502e7e837b0e972229dc90194de",
+      "timestamp": "2026-10-27T18:45:14.000Z"
+    },
+    "observation": {
+      "capturedAt": "2026-10-27T18:44:46.813Z",
+      "ethCallPinned": true,
+      "balancePinned": true,
+      "estimateGasPinned": false,
+      "expiresAt": "2026-10-27T18:49:46.813Z"
+    },
+    "material": {
+      "sender": "0x15ddce897d76ac39c188ade4d353711a60395315",
+      "recipient": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+      "chainId": 1672,
+      "asset": "PROS",
+      "tokenContract": null,
+      "decimals": 18,
+      "amount": "0.000001",
+      "atomicAmount": "1000000000000",
+      "transaction": {
+        "to": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+        "value": "0xe8d4a51000",
+        "data": "0x"
+      }
+    },
+    "materialDigest": "ab2290477b10c0539aace7f39950e8e73a64c71faa69b3b43520a7b486041c1d",
+    "issues": [],
+    "warnings": [],
+    "sources": [
+      {
+        "title": "Pharos MCP",
+        "url": "https://github.com/PharosNetwork/pharos-mcp"
+      },
+      {
+        "title": "USDC on Pharos",
+        "url": "https://www.circle.com/blog/now-available-usdc-cctp-on-pharos"
+      }
+    ],
+    "toolTrace": [
+      {
+        "step": 1,
+        "tool": "get_chain_info",
+        "args": {},
+        "startedAt": "2026-10-27T18:45:04.766Z",
+        "completedAt": "2026-10-27T18:45:09.145Z",
+        "status": "OK",
+        "pinned": false,
+        "error": null,
+        "result": {
+          "name": "Pharos",
+          "chainId": 1672,
+          "chainIdHex": "0x688",
+          "expectedChainId": 1672,
+          "chainIdMatches": true,
+          "latestBlock": "21425928",
+          "latestBlockHex": "0x146ef08",
+          "nativeSymbol": "PROS",
+          "clientVersion": "portal/1.0.0",
+          "rpcUrl": "https://rpc.pharos.xyz"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "get_block",
+        "args": {
+          "block": "latest",
+          "includeTransactions": false
+        },
+        "startedAt": "2026-10-27T18:45:09.145Z",
+        "completedAt": "2026-10-27T18:45:13.257Z",
+        "status": "OK",
+        "pinned": false,
+        "error": null,
+        "result": {
+          "baseFeePerGas": "0x2540be400",
+          "difficulty": "0x0",
+          "extraData": "0x7a15d7a0c331ee52444dfaeb196025a1944093ac94a5cddf224dc93830fad33e",
+          "gasLimit": "0x3b9aca00",
+          "gasUsed": "0x0",
+          "hash": "0x9d1a5c15f36b32a2a2d46a6970d092a9325bc502e7e837b0e972229dc90194de",
+          "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "miner": "0x0000000000000000000000000000000000000000",
+          "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "nonce": "0x0000000000000000",
+          "number": "0x146ef0d",
+          "parentHash": "0x6eaceb4694c3f3c489b836b962d752b2dee25824b0d64df62c609a224c0d905f",
+          "receiptsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+          "size": "0x229",
+          "stateRoot": "0xc24149620374b677a8b2739579876a7317b12f675941999c5c5d0e6175844dc2",
+          "timestamp": "0x6ae0f13a",
+          "totalDifficulty": "0x0",
+          "transactions": [],
+          "transactionsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "uncles": []
+        }
+      },
+      {
+        "step": 3,
+        "tool": "get_balance",
+        "args": {
+          "address": "0x15ddce897d76ac39c188ade4d353711a60395315",
+          "block": "0x146ef0d"
+        },
+        "startedAt": "2026-10-27T18:45:13.257Z",
+        "completedAt": "2026-10-27T18:45:20.783Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "address": "0x15ddce897d76ac39c188ade4d353711a60395315",
+          "balanceWei": "179167084732531768767",
+          "balance": "179.167084732531768767",
+          "symbol": "PROS",
+          "balanceHex": "0x9b6715a4bdcde7dbf"
+        }
+      },
+      {
+        "step": 4,
+        "tool": "get_gas_price",
+        "args": {},
+        "startedAt": "2026-10-27T18:45:20.783Z",
+        "completedAt": "2026-10-27T18:45:23.760Z",
+        "status": "OK",
+        "pinned": false,
+        "error": null,
+        "result": {
+          "gasPriceWei": "10000000000",
+          "gasPriceGwei": "10",
+          "gasPriceHex": "0x2540be400",
+          "maxPriorityFeePerGasWei": "0",
+          "maxPriorityFeePerGasGwei": "0",
+          "maxPriorityFeePerGasHex": "0x0"
+        }
+      },
+      {
+        "step": 5,
+        "tool": "get_code",
+        "args": {
+          "address": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+          "block": "0x146ef0d"
+        },
+        "startedAt": "2026-10-27T18:45:23.760Z",
+        "completedAt": "2026-10-27T18:45:30.461Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "code": "0x"
+        }
+      },
+      {
+        "step": 6,
+        "tool": "eth_call",
+        "args": {
+          "transaction": {
+            "from": "0x15ddce897d76ac39c188ade4d353711a60395315",
+            "to": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+            "value": "0xe8d4a51000",
+            "data": "0x"
+          },
+          "block": "0x146ef0d"
+        },
+        "startedAt": "2026-10-27T18:45:30.461Z",
+        "completedAt": "2026-10-27T18:45:32.531Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "result": "0x"
+        }
+      },
+      {
+        "step": 7,
+        "tool": "estimate_gas",
+        "args": {
+          "transaction": {
+            "from": "0x15ddce897d76ac39c188ade4d353711a60395315",
+            "to": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+            "value": "0xe8d4a51000",
+            "data": "0x"
+          }
+        },
+        "startedAt": "2026-10-27T18:45:32.531Z",
+        "completedAt": "2026-10-27T18:45:39.215Z",
+        "status": "OK",
+        "pinned": false,
+        "error": null,
+        "result": {
+          "gas": "21000",
+          "gasHex": "0x5208"
+        }
+      }
+    ],
+    "disclosure": "NOT SENT / NO SIGNATURE. A public sender address does not prove control.",
+    "validationDigest": "0a14b35ef0731f94ba82892bfe0c8c70921dc91129f4697494e1655fa67098d9"
+  }
+}

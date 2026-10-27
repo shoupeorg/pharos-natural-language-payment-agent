@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+import{parseInstruction}from"./parser.js";import{createReview,prepareUnsigned,validatePayment}from"./engine.js";
+const args=process.argv.slice(2),read=name=>{const i=args.indexOf("--"+name);return i<0?null:args[i+1]};
+if(args.includes("--help")||!read("sender")||!read("instruction")){console.log("Usage: pharos-payment-agent --sender 0x... --instruction \"Send 1 USDC to 0x...\" [--clarifications JSON] [--validate] [--reviewed]");process.exit(args.includes("--help")?0:1);}
+try{const parsed=parseInstruction(read("instruction"),JSON.parse(read("clarifications")||"{}"));let output={parsed};if(args.includes("--validate")){const validation=await validatePayment(parsed,read("sender"));output.validation=validation;if(args.includes("--reviewed")){const review=await createReview(validation,true),fresh=await validatePayment(parsed,read("sender"));output.review=review;output.unsignedTransaction=await prepareUnsigned(validation,review,fresh);}}console.log(JSON.stringify(output,null,2));}catch(error){console.error(JSON.stringify({error:error.message},null,2));process.exit(1);}

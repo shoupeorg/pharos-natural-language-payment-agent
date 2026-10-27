@@ -1,0 +1,22 @@
+{
+  "evidenceVersion": "1",
+  "engineVersion": "natural-language-payment-agent/1.0.0",
+  "capturedAt": "2026-10-27T18:47:11.842Z",
+  "readOnly": true,
+  "noSigning": true,
+  "noBroadcast": true,
+  "files": [
+    "v1-live-native-success.json",
+    "v1-live-usdc-success.json",
+    "v1-live-clarification.json",
+    "v1-live-insufficient.json",
+    "v1-live-gate-rejection.json"
+  ],
+  "assertions": {
+    "native": "VALIDATED",
+    "usdc": "VALIDATED",
+    "clarification": "VALIDATED",
+    "insufficient": "BLOCKED",
+    "gateRejected": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "evidenceVersion":"1",
+  "label":"REAL FOUNDATION DISCOVERY",
+  "capturedAt":"2026-10-27T00:00:00+03:30",
+  "endpoint":"https://mcp.pharos.xyz/mcp",
+  "network":{"name":"Pharos","chainId":1672,"chainIdHex":"0x688","nativeSymbol":"PROS"},
+  "schemaFindings":{"get_balance":{"blockSupported":true},"get_code":{"blockSupported":true},"eth_call":{"blockSupported":true},"estimate_gas":{"blockSupported":false},"get_gas_price":{"blockSupported":false},"send_raw_transaction":"not used; no broadcast path exists"},
+  "officialSources":["https://github.com/PharosNetwork/pharos-mcp","https://www.circle.com/blog/now-available-usdc-cctp-on-pharos"],
+  "liveChecks":{"block":"21406306","sender":"0x15ddce897d76ac39c188ade4d353711a60395315","senderNativeWei":"179318685472531768767","usdc":"0xc879c018db60520f4355c26ed1a6d572cdac1815","usdcDecimals":6,"usdcSymbol":"USDC","nativeGasEstimate":"21000","usdcGasEstimate":"79757","gasPriceWei":"10000000000"},
+  "safety":"Read-only MCP calls only; no transaction was signed or broadcast."
+}

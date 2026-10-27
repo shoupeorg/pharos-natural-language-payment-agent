@@ -1,0 +1,9 @@
+{
+  "evidenceVersion": "1",
+  "label": "HISTORICAL SERVER-GATE EVIDENCE",
+  "capturedAt": "2026-10-27T18:47:11.835Z",
+  "validationId": "8334af36-efb4-444e-9da6-50607bfc43dd",
+  "attempt": "prepare without review",
+  "rejected": true,
+  "error": "Validation and review are required."
+}

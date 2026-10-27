@@ -1,0 +1,421 @@
+{
+  "evidenceVersion": "1",
+  "label": "HISTORICAL REAL LIVE EVIDENCE",
+  "capturedAt": "2026-10-27T18:46:56.298Z",
+  "instruction": "Send 999999999 USDC to 0x4117b9737f64d816be36f6c18c72409c98e4737c",
+  "sender": "0x15ddce897d76ac39c188ade4d353711a60395315",
+  "result": {
+    "id": "35b8fd9e-301a-4daf-b2d3-aa807e4414cf",
+    "engineVersion": "natural-language-payment-agent/1.0.0",
+    "status": "BLOCKED",
+    "historical": false,
+    "parsed": {
+      "instruction": "Send 999999999 USDC to 0x4117b9737f64d816be36f6c18c72409c98e4737c",
+      "canonical": {
+        "network": "Pharos Pacific Mainnet",
+        "chainId": 1672,
+        "amount": "999999999",
+        "asset": "USDC",
+        "recipient": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+        "tokenContract": "0xc879c018db60520f4355c26ed1a6d572cdac1815"
+      },
+      "clarifications": {},
+      "provenance": {
+        "recipient": {
+          "text": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+          "start": 23,
+          "end": 65,
+          "kind": "instruction"
+        },
+        "amount": {
+          "text": "999999999",
+          "start": 5,
+          "end": 14,
+          "kind": "instruction"
+        },
+        "asset": {
+          "text": "USDC",
+          "start": 15,
+          "end": 19,
+          "kind": "instruction"
+        }
+      },
+      "issues": [],
+      "questions": [],
+      "status": "PARSED",
+      "parser": "deterministic rules; no LLM"
+    },
+    "sender": "0x15ddce897d76ac39c188ade4d353711a60395315",
+    "network": {
+      "name": "Pharos Pacific Mainnet",
+      "chainId": 1672,
+      "chainIdHex": "0x688",
+      "nativeSymbol": "PROS",
+      "nativeDecimals": 18,
+      "mcpUrl": "https://mcp.pharos.xyz/mcp",
+      "rpcUrl": "https://rpc.pharos.xyz",
+      "explorer": "https://www.pharosscan.xyz",
+      "aliases": [
+        "pharos",
+        "pharos mainnet",
+        "pharos pacific",
+        "pharos pacific mainnet",
+        "pacific",
+        "pacific mainnet"
+      ]
+    },
+    "asset": {
+      "kind": "ERC20",
+      "symbol": "USDC",
+      "name": "USDC",
+      "contract": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+      "decimals": 6,
+      "registrySource": "https://www.circle.com/blog/now-available-usdc-cctp-on-pharos"
+    },
+    "amount": {
+      "human": "999999999",
+      "atomic": "999999999000000"
+    },
+    "balances": {
+      "nativeWei": "179165217787531768767",
+      "native": "179.165217787531768767",
+      "tokenRaw": "2199999972",
+      "token": "2199.999972"
+    },
+    "transaction": {
+      "from": "0x15ddce897d76ac39c188ade4d353711a60395315",
+      "to": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+      "value": "0x0",
+      "data": "0xa9059cbb0000000000000000000000004117b9737f64d816be36f6c18c72409c98e4737c00000000000000000000000000000000000000000000000000038d7ea4b73dc0"
+    },
+    "transferRoundTrip": {
+      "functionName": "transfer",
+      "recipient": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+      "amountRaw": "999999999000000"
+    },
+    "simulation": {
+      "kind": "EVM_REVERT",
+      "message": "{\n  \"error\": {\n    \"message\": \"execution reverted: ERC20: transfer amount exceeds balance\",\n    \"code\": 3,\n    \"data\": \"0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002645524332303a207472616e7366657220616d6f756e7420657863656564732062616c616e63650000000000000000000000000000000000000000000000000000\"\n  }\n}",
+      "code": null,
+      "data": null
+    },
+    "gas": {
+      "estimate": null,
+      "bufferedLimit": null,
+      "gasPriceWei": "10000000000",
+      "maximumCostWei": null,
+      "source": "get_gas_price; estimate_gas",
+      "estimatePinned": false,
+      "gasPricePinned": false
+    },
+    "block": {
+      "hex": "0x146ef75",
+      "decimal": "21426037",
+      "hash": "0xb33cf212a7b48dc47be64e3a4c9d4c109b2c45a3ab949c454a5a3861b41ecfee",
+      "timestamp": "2026-10-27T18:46:57.000Z"
+    },
+    "observation": {
+      "capturedAt": "2026-10-27T18:46:56.299Z",
+      "ethCallPinned": true,
+      "balancePinned": true,
+      "estimateGasPinned": false,
+      "expiresAt": "2026-10-27T18:51:56.299Z"
+    },
+    "material": {
+      "sender": "0x15ddce897d76ac39c188ade4d353711a60395315",
+      "recipient": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+      "chainId": 1672,
+      "asset": "USDC",
+      "tokenContract": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+      "decimals": 6,
+      "amount": "999999999",
+      "atomicAmount": "999999999000000",
+      "transaction": {
+        "to": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+        "value": "0x0",
+        "data": "0xa9059cbb0000000000000000000000004117b9737f64d816be36f6c18c72409c98e4737c00000000000000000000000000000000000000000000000000038d7ea4b73dc0"
+      }
+    },
+    "materialDigest": "d7b4370890016f0ddf57ce92dd8dc3161b3e9192035afdf5465eee7497fa9f4d",
+    "issues": [
+      {
+        "code": "EVM_REVERT",
+        "message": "{\n  \"error\": {\n    \"message\": \"execution reverted: ERC20: transfer amount exceeds balance\",\n    \"code\": 3,\n    \"data\": \"0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002645524332303a207472616e7366657220616d6f756e7420657863656564732062616c616e63650000000000000000000000000000000000000000000000000000\"\n  }\n}"
+      },
+      {
+        "code": "GAS_ESTIMATE_UNAVAILABLE",
+        "message": "Gas estimate is unavailable."
+      },
+      {
+        "code": "INSUFFICIENT_TOKEN_BALANCE",
+        "message": "Token balance is insufficient."
+      }
+    ],
+    "warnings": [
+      "Token hooks, transfer fees, rebasing, or proxy behavior can make recipient outcomes differ."
+    ],
+    "sources": [
+      {
+        "title": "Pharos MCP",
+        "url": "https://github.com/PharosNetwork/pharos-mcp"
+      },
+      {
+        "title": "USDC on Pharos",
+        "url": "https://www.circle.com/blog/now-available-usdc-cctp-on-pharos"
+      }
+    ],
+    "toolTrace": [
+      {
+        "step": 1,
+        "tool": "get_chain_info",
+        "args": {},
+        "startedAt": "2026-10-27T18:46:57.201Z",
+        "completedAt": "2026-10-27T18:46:57.541Z",
+        "status": "OK",
+        "pinned": false,
+        "error": null,
+        "result": {
+          "name": "Pharos",
+          "chainId": 1672,
+          "chainIdHex": "0x688",
+          "expectedChainId": 1672,
+          "chainIdMatches": true,
+          "latestBlock": "21426038",
+          "latestBlockHex": "0x146ef76",
+          "nativeSymbol": "PROS",
+          "clientVersion": "portal/1.0.0",
+          "rpcUrl": "https://rpc.pharos.xyz"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "get_block",
+        "args": {
+          "block": "latest",
+          "includeTransactions": false
+        },
+        "startedAt": "2026-10-27T18:46:57.542Z",
+        "completedAt": "2026-10-27T18:46:57.839Z",
+        "status": "OK",
+        "pinned": false,
+        "error": null,
+        "result": {
+          "baseFeePerGas": "0x2540be400",
+          "difficulty": "0x0",
+          "extraData": "0x7d8e738911f8b471f325fb41a9d7615a8fa8df88e195a6dd23257bfd0b5a8f7c",
+          "gasLimit": "0x3b9aca00",
+          "gasUsed": "0x0",
+          "hash": "0xb33cf212a7b48dc47be64e3a4c9d4c109b2c45a3ab949c454a5a3861b41ecfee",
+          "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "miner": "0x0000000000000000000000000000000000000000",
+          "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "nonce": "0x0000000000000000",
+          "number": "0x146ef75",
+          "parentHash": "0x67bcb5e3f0a994987a70b6098e2531728db53177c4054c2be04d7d12971e0b90",
+          "receiptsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+          "size": "0x229",
+          "stateRoot": "0x5459f30f426063a83591c8265e6677c65c4ec9aa329c5bafa693e842abee213a",
+          "timestamp": "0x6ae0f1a1",
+          "totalDifficulty": "0x0",
+          "transactions": [],
+          "transactionsRoot": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "uncles": []
+        }
+      },
+      {
+        "step": 3,
+        "tool": "get_balance",
+        "args": {
+          "address": "0x15ddce897d76ac39c188ade4d353711a60395315",
+          "block": "0x146ef75"
+        },
+        "startedAt": "2026-10-27T18:46:57.839Z",
+        "completedAt": "2026-10-27T18:46:58.162Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "address": "0x15ddce897d76ac39c188ade4d353711a60395315",
+          "balanceWei": "179165217787531768767",
+          "balance": "179.165217787531768767",
+          "symbol": "PROS",
+          "balanceHex": "0x9b66ab851db5433bf"
+        }
+      },
+      {
+        "step": 4,
+        "tool": "get_gas_price",
+        "args": {},
+        "startedAt": "2026-10-27T18:46:58.162Z",
+        "completedAt": "2026-10-27T18:46:58.458Z",
+        "status": "OK",
+        "pinned": false,
+        "error": null,
+        "result": {
+          "gasPriceWei": "10000000000",
+          "gasPriceGwei": "10",
+          "gasPriceHex": "0x2540be400",
+          "maxPriorityFeePerGasWei": "0",
+          "maxPriorityFeePerGasGwei": "0",
+          "maxPriorityFeePerGasHex": "0x0"
+        }
+      },
+      {
+        "step": 5,
+        "tool": "get_code",
+        "args": {
+          "address": "0x4117b9737f64d816be36f6c18c72409c98e4737c",
+          "block": "0x146ef75"
+        },
+        "startedAt": "2026-10-27T18:46:58.458Z",
+        "completedAt": "2026-10-27T18:47:01.528Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "code": "0x"
+        }
+      },
+      {
+        "step": 6,
+        "tool": "get_code",
+        "args": {
+          "address": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+          "block": "0x146ef75"
+        },
+        "startedAt": "2026-10-27T18:47:01.528Z",
+        "completedAt": "2026-10-27T18:47:01.824Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "code": "0x60806040526004361061005a5760003560e01c80635c60da1b116100435780635c60da1b146101315780638f2839701461016f578063f851a440146101af5761005a565b80633659cfe6146100645780634f1ef286146100a4575b6100626101c4565b005b34801561007057600080fd5b506100626004803603602081101561008757600080fd5b503573ffffffffffffffffffffffffffffffffffffffff166101de565b610062600480360360408110156100ba57600080fd5b73ffffffffffffffffffffffffffffffffffffffff82351691908101906040810160208201356401000000008111156100f257600080fd5b82018360208201111561010457600080fd5b8035906020019184600183028401116401000000008311171561012657600080fd5b509092509050610232565b34801561013d57600080fd5b50610146610309565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b34801561017b57600080fd5b506100626004803603602081101561019257600080fd5b503573ffffffffffffffffffffffffffffffffffffffff16610318565b3480156101bb57600080fd5b50610146610420565b6101cc610430565b6101dc6101d76104c4565b6104e9565b565b6101e661050d565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614156102275761022281610532565b61022f565b61022f6101c4565b50565b61023a61050d565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614156102fc5761027683610532565b60003073ffffffffffffffffffffffffffffffffffffffff16348484604051808383808284376040519201945060009350909150508083038185875af1925050503d80600081146102e3576040519150601f19603f3d011682016040523d82523d6000602084013e6102e8565b606091505b50509050806102f657600080fd5b50610304565b6103046101c4565b505050565b60006103136104c4565b905090565b61032061050d565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614156102275773ffffffffffffffffffffffffffffffffffffffff81166103bf576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260368152602001806106606036913960400191505060405180910390fd5b7f7e644d79422f17c01e4894b5f4f588d331ebfa28653d42ae832dc59e38c9798f6103e861050d565b6040805173ffffffffffffffffffffffffffffffffffffffff928316815291841660208301528051918290030190a161022281610587565b600061031361050d565b3b151590565b61043861050d565b73ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614156104bc576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603281526020018061062e6032913960400191505060405180910390fd5b6101dc6101dc565b7f7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c35490565b3660008037600080366000845af43d6000803e808015610508573d6000f35b3d6000fd5b7f10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b5490565b61053b816105ab565b6040805173ffffffffffffffffffffffffffffffffffffffff8316815290517fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b9181900360200190a150565b7f10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b55565b6105b48161042a565b610609576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252603b815260200180610696603b913960400191505060405180910390fd5b7f7050c9e0f4ca769c69bd3a8ef740bc37934f8e2c036e5a723fd8ee048ed3f8c35556fe43616e6e6f742063616c6c2066616c6c6261636b2066756e6374696f6e2066726f6d207468652070726f78792061646d696e43616e6e6f74206368616e6765207468652061646d696e206f6620612070726f787920746f20746865207a65726f206164647265737343616e6e6f742073657420612070726f787920696d706c656d656e746174696f6e20746f2061206e6f6e2d636f6e74726163742061646472657373a26469706673582212201b7dbd288c50fb491c3306d5523f68761218a7146fd69c9b0b4a0c0491850c1b64736f6c634300060c0033"
+        }
+      },
+      {
+        "step": 7,
+        "tool": "eth_call",
+        "args": {
+          "transaction": {
+            "to": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+            "data": "0x313ce567"
+          },
+          "block": "0x146ef75"
+        },
+        "startedAt": "2026-10-27T18:47:01.824Z",
+        "completedAt": "2026-10-27T18:47:02.407Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000006"
+        }
+      },
+      {
+        "step": 8,
+        "tool": "eth_call",
+        "args": {
+          "transaction": {
+            "to": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+            "data": "0x95d89b41"
+          },
+          "block": "0x146ef75"
+        },
+        "startedAt": "2026-10-27T18:47:02.408Z",
+        "completedAt": "2026-10-27T18:47:03.424Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045553444300000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "step": 9,
+        "tool": "eth_call",
+        "args": {
+          "transaction": {
+            "to": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+            "data": "0x06fdde03"
+          },
+          "block": "0x146ef75"
+        },
+        "startedAt": "2026-10-27T18:47:03.424Z",
+        "completedAt": "2026-10-27T18:47:06.605Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045553444300000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "step": 10,
+        "tool": "eth_call",
+        "args": {
+          "transaction": {
+            "to": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+            "data": "0x70a0823100000000000000000000000015ddce897d76ac39c188ade4d353711a60395315"
+          },
+          "block": "0x146ef75"
+        },
+        "startedAt": "2026-10-27T18:47:06.605Z",
+        "completedAt": "2026-10-27T18:47:07.476Z",
+        "status": "OK",
+        "pinned": true,
+        "error": null,
+        "result": {
+          "result": "0x00000000000000000000000000000000000000000000000000000000832155e4"
+        }
+      },
+      {
+        "step": 11,
+        "tool": "eth_call",
+        "args": {
+          "transaction": {
+            "from": "0x15ddce897d76ac39c188ade4d353711a60395315",
+            "to": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+            "value": "0x0",
+            "data": "0xa9059cbb0000000000000000000000004117b9737f64d816be36f6c18c72409c98e4737c00000000000000000000000000000000000000000000000000038d7ea4b73dc0"
+          },
+          "block": "0x146ef75"
+        },
+        "startedAt": "2026-10-27T18:47:07.477Z",
+        "completedAt": "2026-10-27T18:47:10.950Z",
+        "status": "FAILED",
+        "pinned": true,
+        "error": {
+          "message": "{\n  \"error\": {\n    \"message\": \"execution reverted: ERC20: transfer amount exceeds balance\",\n    \"code\": 3,\n    \"data\": \"0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002645524332303a207472616e7366657220616d6f756e7420657863656564732062616c616e63650000000000000000000000000000000000000000000000000000\"\n  }\n}",
+          "code": null,
+          "data": null
+        },
+        "result": null
+      },
+      {
+        "step": 12,
+        "tool": "estimate_gas",
+        "args": {
+          "transaction": {
+            "from": "0x15ddce897d76ac39c188ade4d353711a60395315",
+            "to": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+            "value": "0x0",
+            "data": "0xa9059cbb0000000000000000000000004117b9737f64d816be36f6c18c72409c98e4737c00000000000000000000000000000000000000000000000000038d7ea4b73dc0"
+          }
+        },
+        "startedAt": "2026-10-27T18:47:10.950Z",
+        "completedAt": "2026-10-27T18:47:11.561Z",
+        "status": "FAILED",
+        "pinned": false,
+        "error": {
+          "message": "{\n  \"error\": {\n    \"message\": \"execution reverted: ERC20: transfer amount exceeds balance\",\n    \"code\": 3,\n    \"data\": \"0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002645524332303a207472616e7366657220616d6f756e7420657863656564732062616c616e63650000000000000000000000000000000000000000000000000000\"\n  }\n}",
+          "code": null,
+          "data": null
+        },
+        "result": null
+      }
+    ],
+    "disclosure": "NOT SENT / NO SIGNATURE. A public sender address does not prove control.",
+    "validationDigest": "31fb251c72a10ce66bbc01a74c927e931edc3aea619a1d7bd401e99576ca5a1b"
+  }
+}
